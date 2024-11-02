@@ -1,0 +1,49 @@
+/* The general body styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: darkblue; /* dark blue background */
+    color: rgb(203, 255, 13); /* Yellow text color for contrast */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* The header styling */
+header {
+    text-align: center;
+    margin-top: 23px;
+}
+
+h1 {
+    font-size: 2em;
+    color: white;
+}
+
+/* The gallery styling section */
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 17px; /* Space between images */
+    justify-content: center;
+    padding: 21px;
+}
+
+/* the individual gallery item styling */
+.gallery-item {
+    position: relative;
+}
+
+.gallery-item img {
+    max-width: 203px; /* Adjust size as needed */
+    border-radius: 10px;
+    transition: transform 0.4s, box-shadow 0.4s;
+    cursor: pointer;
+}
+
+/* The hover effect */
+.gallery-item img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 0 15px blue; /* Blue glow */
+}
